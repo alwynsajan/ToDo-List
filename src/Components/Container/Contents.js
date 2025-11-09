@@ -9,7 +9,7 @@ function Contents({ toDoList, setToDoList }) {
 
   return (
     <div className="contents">
-      <h2>To Do List</h2>
+      <h2>To-Dos . .</h2>
       <div className="todoContainer">
         {toDoList.length === 0 ? (
           <p className='placeHolder'>No To-Dos yet!</p>
