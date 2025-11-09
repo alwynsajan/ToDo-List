@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/alwynsajan/ToDo-List.git/static/css/main.3b8463a3.css",
+    "main.js": "/alwynsajan/ToDo-List.git/static/js/main.aa92d01e.js",
+    "index.html": "/alwynsajan/ToDo-List.git/index.html",
+    "main.3b8463a3.css.map": "/alwynsajan/ToDo-List.git/static/css/main.3b8463a3.css.map",
+    "main.aa92d01e.js.map": "/alwynsajan/ToDo-List.git/static/js/main.aa92d01e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b8463a3.css",
+    "static/js/main.aa92d01e.js"
+  ]
+}
