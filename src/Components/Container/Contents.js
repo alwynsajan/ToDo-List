@@ -1,11 +1,12 @@
 import React from 'react'
 import './Container'
 
-function Contents() {
+function Contents(props) {
+  const { toDoList, setToDoList } = props;
   return (
     <div>
         <h2 className='contents'>
-            Welcome to your To-Do List App!
+            To Do . .
         </h2>
     </div>
   )
