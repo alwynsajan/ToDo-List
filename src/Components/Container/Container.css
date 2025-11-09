@@ -1,7 +1,7 @@
 .containerElement {
   display: grid;
   grid-template-columns: 20% 1fr; 
-  height: 100vh;
+  /* height: 100vh; */
   gap: 1%; 
   padding: 0.6%; /* outer spacing */
   box-sizing: border-box;
@@ -36,15 +36,64 @@
 .addButton {
   display: block;    
   margin-top: 10px;
-  margin-left: auto;  
+  /* margin-left: auto;   */
   padding: 10px 20px;
   border: 2px solid white;
   border-radius: 5px;
   background-color: #4CAF50;
   color: white;
   cursor: pointer;
+  width: 100%;
 }
 
 .addButton:hover {
   background-color: #45a049;
+}
+
+.placeHolder {
+  color: #888;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: center; /* horizontal centering */
+  height: 200px;         /* or any fixed height for placeholder box */
+  margin: 0;             /* remove default margin */
+}
+
+.todoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.todoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: rgba(187, 187, 181, 0.5);
+  border-radius: 8px;
+}
+
+.todoCheckbox {
+  margin-right: 10px;
+}
+
+.todoText {
+  flex: 1; /* take remaining space */
+}
+
+.deleteButton {
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: #d32f2f;
 }

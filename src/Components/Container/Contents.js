@@ -1,15 +1,30 @@
-import React from 'react'
-import './Container'
+import React from 'react';
+import './Container.css';
 
-function Contents(props) {
-  const { toDoList, setToDoList } = props;
+function Contents({ toDoList, setToDoList }) {
+
+  const handleDelete = (id) => {
+    setToDoList(toDoList.filter(todo => todo.id !== id));
+  };
+
   return (
-    <div>
-        <h2 className='contents'>
-            To Do . .
-        </h2>
+    <div className="contents">
+      <h2>To Do List</h2>
+      <div className="todoContainer">
+        {toDoList.length === 0 ? (
+          <p className='placeHolder'>No To-Dos yet!</p>
+        ) : (
+          toDoList.map((todo) => (
+            <div key={todo.id} className="todoBox">
+              <input type="checkbox" className="todoCheckbox" />
+              <span className="todoText">{todo.text}</span>
+              <button className="deleteButton" onClick={() => handleDelete(todo.id)}>Delete</button>
+            </div>
+          ))
+        )}
+      </div>
     </div>
-  )
+  );
 }
 
-export default Contents
+export default Contents;
